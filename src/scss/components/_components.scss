@@ -174,31 +174,37 @@ _________________________________________________ */
   position: relative;
   background: $primary-color;
   color: $white;
-  padding: 2rem 2rem 3.5rem 2rem;
   @include box_shadow(3);
-}
-.card-title {
-  font-size: 3.0rem;
-}
-.card-subtitle {
-  font-size: 2.0rem;
-  margin:0;
-}
-.card-text {
-  font-size: 1.6rem;
-}
-.card-action-bar {
-  float: right;
-    ul {
-      list-style-type: none;
+
+  img {
+    max-width: 100%;
     }
-    li {
-      display: inline-block;
-      text-decoration: none;
-      padding: 0 1rem;
+  .content {
+    padding: 2rem 2rem 3.5rem 2rem;
+  }
+  .title {
+    font-size: 3.0rem;
+  }
+  .subtitle {
+    font-size: 2.0rem;
+    margin:0;
+  }
+  .text {
+    font-size: 1.6rem;
+  }
+  .action-bar {
+    float: right;
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0 1rem;
+      }
+      i {
+      color: $white;
+      font-size: 2rem;
+      }
     }
-    i {
-    color: $white;
-    font-size: 2rem;
-    }
-}
+  }
