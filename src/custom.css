@@ -1,4 +1,7 @@
 header {
   text-align: center;
-  padding: 8rem 0;
+  padding: 10rem 0 5rem;
+}
+header h1 {
+  line-height: 20px;
 }
