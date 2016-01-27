@@ -180,14 +180,15 @@ _________________________________________________ */
     max-width: 100%;
     }
   .content {
+    position: relative;
     padding: 2rem 2rem 3.5rem 2rem;
   }
   .title {
     font-size: 3.0rem;
   }
   .subtitle {
-    font-size: 2.0rem;
-    margin-bottom:.5rem;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
     font-weight: 300;
   }
