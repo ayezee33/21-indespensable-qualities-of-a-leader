@@ -7,6 +7,7 @@ var gulp = require('gulp'),
   cache        = require ('gulp-cache'),
   rename       = require('gulp-rename'),
   sass         = require('gulp-sass'),
+  imagemin     = require('gulp-imagemin'),
   maps         = require('gulp-sourcemaps'),
   plumber      = require('gulp-plumber'),
   autoprefixer = require('gulp-autoprefixer'),
@@ -35,8 +36,9 @@ gulp.task("minifyScripts", ["concatScripts"], function() {
 });
 
 gulp.task('images', function() {
-  return gulp.src('src/images/**/*')
-    .pipe(gulp.dest('dist/img'))
+  return gulp.src('src/img/**/*')
+  .pipe(imagemin({ progressive: true }))
+  .pipe(gulp.dest('dist/img'))
 });
 
 gulp.task('sass', function() {
@@ -55,7 +57,7 @@ gulp.task('clean', function() {
 
 
 gulp.task("build", ['minifyScripts', 'sass' ,'images'], function() {
-  return gulp.src(["css/**/*.scss", "js/**/*.js", "images/**", "fonts/**"], { base: './'})
+  return gulp.src(["css/**/*.scss", "js/**/*.js", "img/**", "fonts/**"], { base: './'})
             .pipe(gulp.dest('dist'));
 });
 
