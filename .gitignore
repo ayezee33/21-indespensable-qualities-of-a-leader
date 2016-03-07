@@ -1,7 +1,4 @@
 node_modules
 bower.json
 package.json
-src
 bower_components
-gulpfile.js
-package.json
