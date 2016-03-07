@@ -178,6 +178,7 @@ _________________________________________________ */
 
   img {
     max-width: 100%;
+<<<<<<< HEAD
     }
   .content {
     position: relative;
@@ -279,3 +280,35 @@ _________________________________________________ */
 
     }
   }
+=======
+    }
+  .content {
+    padding: 2rem 2rem 3.5rem 2rem;
+  }
+  .title {
+    font-size: 3.0rem;
+  }
+  .subtitle {
+    font-size: 2.0rem;
+    margin:0;
+  }
+  .text {
+    font-size: 1.6rem;
+  }
+  .action-bar {
+    float: right;
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0 1rem;
+      }
+      i {
+      color: $white;
+      font-size: 2rem;
+      }
+    }
+  }
+>>>>>>> Added card image
