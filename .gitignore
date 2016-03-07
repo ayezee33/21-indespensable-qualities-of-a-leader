@@ -1,7 +1,7 @@
 node_modules
 bower.json
 package.json
-dist
+src
 bower_components
 gulpfile.js
 package.json
